@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.ControllerLogin">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="233.0" style="-fx-background-color: #ff914d;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" layoutX="2.0" layoutY="170.0" prefHeight="59.0" prefWidth="225.0" text="FactGest" textAlignment="CENTER" textFill="#545454">
+               <font>
+                  <Font name="Bauhaus 93" size="52.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="230.0" text="Gestion des Factures" textAlignment="CENTER" textFill="#eeeeee">
+               <font>
+                  <Font name="Corbel" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="59.5999755859375" endY="-1.52587890625E-5" layoutX="135.0" layoutY="229.0" startX="-100.0" stroke="#eeeeee" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="400.0" prefWidth="370.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="125.0" layoutY="31.0" text="Login" textAlignment="CENTER" textFill="#545454">
+               <font>
+                  <Font name="Calibri Bold" size="52.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="121.0" text="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="187.0" text="Mot de Passe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textFieldUsername" layoutX="70.0" layoutY="143.0" prefHeight="38.0" prefWidth="226.0" promptText="Username..." style="-fx-background-radius: 0;" />
+            <Button fx:id="btnLogin" layoutX="70.0" layoutY="280.0" mnemonicParsing="false" onAction="#login" prefHeight="34.0" prefWidth="226.0" style="-fx-background-color: #ff914d; -fx-background-radius: 0;" text="Login" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <PasswordField fx:id="textFieldPassword" layoutX="70.0" layoutY="213.0" prefHeight="38.0" prefWidth="226.0" promptText="Mot de Passe..." style="-fx-background-radius: 0;" />
+            <Label fx:id="labelIncorrect" layoutX="70.0" layoutY="325.0" prefHeight="18.0" prefWidth="226.0" textAlignment="CENTER" textFill="RED" />
+            <Button fx:id="btnInscrire" layoutX="70.0" layoutY="352.0" mnemonicParsing="false" onAction="#inscrire" prefHeight="34.0" prefWidth="226.0" style="-fx-background-color: green; -fx-background-radius: 0;" text="S'inscrire" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
